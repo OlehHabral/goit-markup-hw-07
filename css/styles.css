@@ -194,7 +194,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/hero/people-office.jpg");
+    url("../images/hero/people-office-desktop.jpg");
   background-size: cover;
   background-color: var(--navy-backgr-color);
   padding: 188px 0px;
