@@ -46,12 +46,12 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-open">
+        <button type="button" class="mobile-menu-open" js-open-menu>
           <svg class="mobile-menu-icon" width="32" height="32">
-            <use href="./images/icons.svg#icon-menu-burger"></use>
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
           </svg>
         </button>
-        <ul class="list-header list-none contact-header-list">
+        <ul class="list-header-contact list-none contact-header-list">
           <li class="nav-contact">
             <a
               class="header-contact text-decor"
@@ -66,19 +66,19 @@
           </li>
         </ul>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu" js-menu-container>
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close-btn">
+          <button class="mobile-menu-close-btn" js-close-menu>
             <svg class="mobile-close-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-close-modal"></use>
             </svg>
           </button>
           <ul class="nav-list">
             <li class="nav-list-item">
-              <a class="nav-list-link" href="">Studio</a>
+              <a class="nav-list-link" href="./index.html">Studio</a>
             </li>
             <li class="nav-list-item">
-              <a class="nav-list-link" href="">Portfolio</a>
+              <a class="nav-list-link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="nav-list-item">
               <a class="nav-list-link" href="">Contacts</a>
@@ -640,5 +640,6 @@
       </div>
     </div> -->
     <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
