@@ -384,7 +384,7 @@ body {
 /* -------DESKTOP------- */
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1158px;
+    width: 1160px;
   }
   .logo-header {
     margin-right: 76px;
@@ -450,7 +450,8 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    width: 320px;
+    max-width: 320px;
+    width: 100%;
     margin: 0 auto;
     color: var(--white-text-color);
     text-align: center;
@@ -480,7 +481,8 @@ body {
   }
   .hero-header {
     font-size: 56px;
-    width: 496px;
+    max-width: 496px;
+    width: 100%;
     margin-bottom: 36px;
   }
 }
@@ -521,10 +523,9 @@ body {
   }
 }
 
-
 /* ======Section 1====== */
-
-@media screen and (max-width: 767px){
+/* ==========MOBILE========= */
+@media screen and (min-width: 320px) {
   .descriptions-header {
     display: flex;
     justify-content: center;
@@ -553,7 +554,9 @@ body {
     margin-bottom: 72px;
   }
 }
-@media screen and (min-width: 768px){
+
+/* ========TABLET========= */
+@media screen and (min-width: 768px) {
   .list-description-style {
     list-style: none;
     justify-content: space-between;
@@ -569,7 +572,7 @@ body {
     color: var(--secondary-text-color);
   }
 }
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1199px) {
   .description-list-icon {
     display: none;
   }
@@ -577,139 +580,200 @@ body {
     padding: 96px 0px 96px 0px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .list-description-style {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0px auto;
+    gap: 72px 24px;
+    list-style: none;
+  }
+  .description-box {
+    max-width: 356px;
+    width: 100%;
+  }
+  .description-box:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
 
-@media screen and (min-width: 1200px){
-.descriptions-header {
-  font-family: var(--primary-font);
+/* =========DESKTOP========== */
+@media screen and (min-width: 1200px) {
+  .descriptions-header {
+    font-family: var(--primary-font);
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     color: var(--primary-text-color);
     margin-bottom: 8px;
+  }
+  .description-list-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    background: var(--light-backgr-color);
+    border-radius: 4px;
+    padding: 24px 100px;
+    margin-bottom: 8px;
+  }
 }
-}
-
-
-/* .description-list-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 264px;
-  height: 112px;
-  background: var(--light-backgr-color);
-  border-radius: 4px;
-  padding: 24px 100px;
-  margin-bottom: 8px;
-} */
 
 /* ======Section 2====== */
-.list-work-style {
-  display: flex;
-  justify-content: space-between;
+@media screen and (max-width: 1199px) {
+  .our-work {
+    display: none;
+  }
 }
-.work-header {
-  font-family: var(--primary-font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  color: var(--primary-text-color);
-  text-align: center;
-  margin-bottom: 72px;
-}
-.work-img {
-  box-sizing: border-box;
-  width: 360px;
-  height: 300px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-.work-box {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .list-work-style {
+    display: flex;
+    justify-content: space-between;
+  }
+  .work-header {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    color: var(--primary-text-color);
+    text-align: center;
+    margin-bottom: 72px;
+  }
+  .work-img {
+    box-sizing: border-box;
+    width: 360px;
+    height: 300px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .work-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .our-work {
+    padding: 0px 0px 120px 0px;
+  }
 }
 
 /* ======Section 3====== */
-.list-team {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-}
-.our-team {
-  background: var(--light-backgr-color);
-}
-.team-card {
-  background: var(--white-backgr-color);
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-.team-header {
-  font-family: var(--primary-font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  color: var(--primary-text-color);
-  display: block;
-  text-align: center;
-  margin-bottom: 72px;
-}
-.team-name {
-  display: flex;
-  justify-content: center;
-  font-family: var(--primary-font);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.11;
-  color: var(--primary-text-color);
-  margin-bottom: 8px;
-}
-.team-text {
-  display: flex;
-  justify-content: center;
-  font-family: var(--primary-font);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--secondary-text-color);
-  margin-bottom: 8px;
-}
-.team-item {
-  padding: 32px 16px;
-}
-.team-social-list {
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
-}
-.team-list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--blue-backgr-color);
-  transition: background-color var(--transition-duration)
-    var(--transition-timing-function);
-}
-.team-list-link:hover,
-.team-list-link:focus {
-  background-color: var(--blue-backgr-cl);
-}
-.team-list-icon {
-  fill: var(--white-text-color);
+/* ========MOBILE========= */
+@media screen and (min-width: 320px) {
+  .our-team {
+    background: var(--light-backgr-color);
+    padding: 96px 0px;
+  }
+  .header-team {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    color: var(--primary-text-color);
+    display: block;
+    text-align: center;
+    margin-bottom: 72px;
+  }
+  .team-card {
+    max-width: 264px;
+    width: 100%;
+    background: var(--white-backgr-color);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+  .list-team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+  }
+  .team-name {
+    display: flex;
+    justify-content: center;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.11;
+    color: var(--primary-text-color);
+    margin-bottom: 8px;
+  }
+  .team-social-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .team-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--blue-backgr-color);
+    transition: background-color var(--transition-duration)
+      var(--transition-timing-function);
+  }
+  .team-list-link:hover,
+  .team-list-link:focus {
+    background-color: var(--blue-backgr-cl);
+  }
+  .team-list-icon {
+    fill: var(--white-text-color);
+  }
+  .list-team {
+    display: flex;
+    justify-content: center;
+    gap: 72px;
+  }
+  .team-text {
+    display: flex;
+    justify-content: center;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--secondary-text-color);
+    margin-bottom: 8px;
+  }
+  .team-item {
+    padding: 32px 16px;
+  }
 }
 
+/* =======TABLET======= */
+@media screen and (min-width: 768px) {
+  .list-team {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 64px 24px;
+  }
+}
+
+/* =======DESKTOP====== */
+@media screen and (min-width: 1200px) {
+  .list-team {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .our-team {
+    padding: 120px 0px;
+  }
+}
 /* ======Section 4====== */
 .customers-header {
   font-family: var(--primary-font);
