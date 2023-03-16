@@ -416,7 +416,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/hero/dark-bg-mobile.jpg");
+    url(../images/hero/dark-bg-mobile.jpg);
   background-size: cover;
   background-color: var(--navy-backgr-color);
 }
@@ -475,7 +475,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("./images/hero/dark-bg-mobile@2x.jpg");
+      url(../images/hero/dark-bg-mobile@2x.jpg);
   }
 }
 /* ========TABLET======== */
@@ -486,7 +486,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero/dark-bg-tablet.jpg");
+      url(../images/hero/dark-bg-tablet.jpg);
   }
   .hero-header {
     font-size: 56px;
@@ -503,7 +503,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero/dark-bg-tablet@2x.jpg");
+      url(../images/hero/dark-bg-tablet@2x.jpg);
   }
 }
 /* =====DESKTOP====== */
@@ -514,7 +514,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero/people-office-desktop.jpg");
+      url(../images/hero/people-office-desktop.jpg);
   }
   .hero-header {
     margin-bottom: 48px;
@@ -528,7 +528,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero/people-office-desktop@2x.jpg");
+      url(../images/hero/people-office-desktop@2x.jpg);
   }
 }
 
