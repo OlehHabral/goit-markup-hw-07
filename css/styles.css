@@ -146,9 +146,10 @@ body {
     background-color: transparent;
     padding: 0;
     height: 32px;
+    border: none;
   }
   .mobile-menu-icon {
-    fill: var(--primary-text-color);
+    stroke: var(--primary-text-color);
   }
   .mobile-menu-container {
     position: relative;
@@ -474,7 +475,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero/dark-bg-mobile@2x.jpg");
+      url("./images/hero/dark-bg-mobile@2x.jpg");
   }
 }
 /* ========TABLET======== */
