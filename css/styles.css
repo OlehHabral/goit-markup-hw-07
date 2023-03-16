@@ -412,13 +412,13 @@ body {
 /* =======Hero image====== */
 .hero {
   min-height: 432px;
+  background-color: var(--navy-backgr-color);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url("../images/hero/dark-bg-mobile.jpg");
   background-size: cover;
-  background-color: var(--navy-backgr-color);
 }
 .hero-btn {
   font-family: var(--primary-font);
